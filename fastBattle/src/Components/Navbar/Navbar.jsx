@@ -23,13 +23,7 @@ import {Link} from 'react-router-dom'
         <SearchBar />
 
         <div className='navigation-links'>
-          <Link to="/div">
-          Div
-          </Link>
-
-          <Link to="/span">
-          Span
-          </Link>
+         
           <h4>Cart</h4>
           <h4>Deals</h4>
           <h4>Store</h4>
