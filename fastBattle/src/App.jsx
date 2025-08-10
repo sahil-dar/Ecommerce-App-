@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Button from './Components/SearchBar/SearchBar'
-import Footer from './Components/Footer/Footer'
-import SearchBar from './Components/SearchBar/SearchBar'
+import Footer from './Components/Footer/Footer';
+import SearchBar from './Components/SearchBar/SearchBar';
 import { Routes , Route} from 'react-router-dom'
 import Dashboard from '../Pages/Dashboard/Dashboard';
 import Product from '../Pages/Product/Product';
