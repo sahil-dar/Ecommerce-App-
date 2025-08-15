@@ -15,29 +15,32 @@ const Product = () => {
     backgroundColor: "#e3f2fd", // light blue background
     padding: "20px",
     minHeight: "100vh",
-    color: "#0d47a1", // dark blue text
+    color: "#000000ff", // dark blue text
   };
 
-  const cardStyle = {
-    backgroundColor: "#bbdefb", // lighter blue
-    padding: "20px",
-    borderRadius: "10px",
-    maxWidth: "300px",
-    margin: "0 auto",
-    textAlign: "center",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-  };
+const cardStyle = {
+  backgroundColor: "#f9f9f9ff", // lighter blue
+  padding: "20px",
+  borderRadius: "10px",
+  maxWidth: "500px",
+  margin: "0 auto",
+  textAlign: "center",
+  boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+};
 
-  const imageStyle = {
-    width: "100%",
-    borderRadius: "8px",
-    marginBottom: "10px",
-  };
+ const imageStyle = {
+  width: "100%",
+  height: "30vh",
+  borderRadius: "8px",
+  marginBottom: "10px",
+  objectFit: "cover", // makes image cover the area
+  objectPosition: "center", // keeps image centered
+};
 
   const priceStyle = {
     fontSize: "20px",
     fontWeight: "bold",
-    color: "#0d47a1",
+    color: "#000000ff",
   };
 
   const buttonStyle = {

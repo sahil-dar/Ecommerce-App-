@@ -1,5 +1,5 @@
-.searchBar{
-    background-color: white;
+.searchBar {
+    background-color: rgb(236, 233, 233);
     border-radius: 10px;
     height: 25px;
     width: 27rem;
@@ -7,5 +7,13 @@
     display: flex;
     align-items: center;
     padding-left: 5px;
-    border: 1px solid;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: solid 1px;
+    transition: border-bottom 0.3s ease;
+}
+
+.searchBar:hover,
+.searchBar:focus {
+    border: 2px solid orange;
 }

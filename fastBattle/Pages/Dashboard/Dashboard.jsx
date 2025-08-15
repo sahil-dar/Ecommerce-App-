@@ -50,7 +50,7 @@ export default function Dashboard() {
 
     const containerStyle = {
         minHeight: "100vh",
-        background: "linear-gradient(to bottom, #0d47a1, #1976d2)",
+        background: "linear-gradient(to bottom, #ffffff, white)",
         borderRadius: "10px",
         marginTop: "10px",
         color: "white",
@@ -61,6 +61,7 @@ export default function Dashboard() {
     const headerStyle = {
         display: "flex",
         justifyContent: "space-between",
+        color:"Black",
         alignItems: "center",
         marginBottom: "32px"
     };
@@ -82,16 +83,19 @@ export default function Dashboard() {
     };
 
     const cardStyle = {
-        backgroundColor: "#1565c0",
+        backgroundColor: "Transparent",
+        color:"Black",
         borderRadius: "12px",
         padding: "24px",
+        border:"1px, Solid",
         display: "flex",
         alignItems: "center",
         boxShadow: "0 4px 12px rgba(0,0,0,0.2)"
     };
 
     const productCardStyle = {
-        backgroundColor: "#1565c0",
+        backgroundColor: "white",
+        color:"Black",
         borderRadius: "12px",
         overflow: "hidden",
         boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
@@ -112,7 +116,7 @@ export default function Dashboard() {
     return (
         <div style={containerStyle}>
             <header style={headerStyle}>
-                <h1 style={{ fontSize: "28px", fontWeight: "bold" }}>Welcome, {username} 👋</h1>
+                <h1 style={{ fontSize: "28px", fontWeight: "bold",  }}>Welcome, {username} 👋</h1>
                 <button style={buttonStyle}>
                     <FontAwesomeIcon icon={faUser} style={{ marginRight: "8px", verticalAlign: "middle" }} /> Profile
                 </button>
@@ -121,17 +125,17 @@ export default function Dashboard() {
             <section style={gridStyle}>
                 {stats.map((stat, i) => (
                     <div key={i} style={cardStyle}>
-                        <FontAwesomeIcon icon={stat.icon} style={{ height: "40px", width: "40px", color: "#90caf9", marginRight: "16px" }} />
+                        <FontAwesomeIcon icon={stat.icon} style={{ height: "40px", width: "40px", color: "#000000ff", marginRight: "16px" }} />
                         <div>
                             <p style={{ fontSize: "18px", fontWeight: "600" }}>{stat.value}</p>
-                            <p style={{ color: "#bbdefb", fontSize: "14px" }}>{stat.label}</p>
+                            <p style={{ color: "#000000ff", fontSize: "14px" }}>{stat.label}</p>
                         </div>
                     </div>
                 ))}
             </section>
 
             <section>
-                <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px" }}>Featured Products</h2>
+                <h2 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "16px", color:"Black" }}>Featured Products</h2>
                 <div style={gridStyle}>
                     {featuredProducts.map((product) => (
                         <div
@@ -140,7 +144,7 @@ export default function Dashboard() {
                             <img src={product.image} alt={product.name} style={{ width: "100%", height: "160px", objectFit: "cover" }} />
                             <div style={{ padding: "16px" }}>
                                 <h3 style={{ fontSize: "18px", fontWeight: "600", marginBottom: "4px" }}>{product.name}</h3>
-                                <p style={{ color: "#bbdefb", marginBottom: "12px" }}>{product.price}</p>
+                                <p style={{ color: "#000000ff", marginBottom: "12px" }}>{product.price}</p>
                                 <button style={addToCartButtonStyle}>
                                     <FontAwesomeIcon icon={faCartShopping} style={{ marginRight: "6px", verticalAlign: "middle" }} /> Add to Cart
                                 </button>
